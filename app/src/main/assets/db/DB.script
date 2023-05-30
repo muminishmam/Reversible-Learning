@@ -1,0 +1,26 @@
+CREATE SCHEMA PUBLIC AUTHORIZATION DBA
+CREATE MEMORY TABLE PUBLIC.flashcardTable( question VARCHAR(200) NOT NULL, answer VARCHAR(100), userName VARCHAR(100) NOT NULL, PRIMARY KEY(question))
+CREATE MEMORY TABLE PUBLIC.folderTable(folderName VARCHAR(20) NOT NULL, PRIMARY KEY(folderName))
+CREATE MEMORY TABLE PUBLIC.card_folders(question VARCHAR(200) NOT NULL, folderName VARCHAR(20) NOT NULL, PRIMARY KEY(question, folderName))
+CREATE MEMORY TABLE PUBLIC.USERS(USERNAME VARCHAR(50) NOT NULL PRIMARY KEY,PASSWORD VARCHAR(10) NOT NULL)
+CREATE USER SA PASSWORD DIGEST 'd41d8cd98f00b204e9800998ecf8427e'
+ALTER USER SA SET LOCAL TRUE
+CREATE SCHEMA PUBLIC AUTHORIZATION DBA
+SET DATABASE DEFAULT INITIAL SCHEMA PUBLIC
+GRANT DBA TO SA
+SET WRITE_DELAY 20
+SET FILES SCALE 32
+SET SCHEMA PUBLIC
+INSERT INTO USERS VALUES('liza@test.com', 'TEST')
+INSERT INTO USERS VALUES('user123', 'pass123')
+INSERT INTO USERS VALUES('1', '2')
+INSERT INTO flashcardTable VALUES('What is the name of this planet', 'Earth', 'guest')
+INSERT INTO flashcardTable VALUES('Question1', 'Answer1', 'guest1')
+INSERT INTO flashcardTable VALUES('Question2', 'Answer2', 'guest1')
+INSERT INTO flashcardTable VALUES('Question3', 'Answer3', 'guest1')
+INSERT INTO flashcardTable VALUES('Question4', 'Answer4', 'guest4')
+INSERT INTO folderTable VALUES('Geography')
+INSERT INTO folderTable VALUES('arts')
+INSERT INTO flashcardTable VALUES('What is wrong with this database', 'who knows', 'guest')
+INSERT INTO card_folders VALUES('What is the name of this planet', 'Geography')
+INSERT INTO card_folders VALUES('Question4', 'arts')

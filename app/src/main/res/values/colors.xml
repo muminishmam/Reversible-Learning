@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#BA0404</color>
+    <color name="light_peach">#E1BC91</color>
+    <color name="dark_ocean_blue">#0058AB</color>
+    <color name="light_ocean_blue">#0178BD</color>
+    <color name="light_blue">#368DC5</color>
+    <color name="light_pink">#FB9EC4</color>
+    <color name="yollowish">#FBEBBA</color>
+    <color name="grayish">#D3474646</color>
+    <color name="yollowishButtonColor">#D0FFD041</color>
+    <color name="profileUI_Layer1">#FFC107</color>
+    <color name="profileUI1">#FFEB3B</color>
+
+</resources>
