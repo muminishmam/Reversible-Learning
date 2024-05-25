@@ -24,8 +24,8 @@ Reversible Learning operates on a three-tier architecture:
 - Syed Ali Ahsen Muhammad Jafry
 
 ### Key Documents
-- [Vision Statement](https://github.com/muminishmam/reversibleLearning/blob/master/VISION.md)
-- [Architecture Overview](https://github.com/muminishmam/reversibleLearning/blob/master/Documents/Architecture.md)
+- [Vision Statement](https://github.com/muminishmam/Reversible-Learning/blob/main/VISION.md)
+- [Architecture Overview](https://github.com/muminishmam/Reversible-Learning/blob/main/Documents/Architecture.md)
 
 ### Getting Started
 
